@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ZainiTOP - Carrello</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>ZainiTop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sito_scuola.html">Home</a></li>
+                <li><a href="#">Prodotti</a></li>
+                <li><a href="#">Carrello</a></li>
+                <li><a href="#">Contattaci</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="hero">
+        <h2>Il tuo Carrello</h2>
+        <p>Rivedi i prodotti selezionati e procedi con l'acquisto</p>
+    </section>
+
+    <!-- Carrello Section -->
+    <section class="cart">
+        <h2>Carrello</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="immagini/zaino_2.jpg" alt="Zaino Avventura">
+                <div class="item-details">
+                    <h3>Zaino Avventura</h3>
+                    <p>Quantità: 1</p>
+                    <p>Prezzo: 49.99 €</p>
+                </div>
+                <button class="remove-btn">Rimuovi</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="immagini/zaino_3.jpg" alt="Zaino Elegante">
+                <div class="item-details">
+                    <h3>Zaino Elegante</h3>
+                    <p>Quantità: 1</p>
+                    <p>Prezzo: 59.99 €</p>
+                </div>
+                <button class="remove-btn">Rimuovi</button>
+            </div>
+
+            <!-- Aggiungi qui altri elementi del carrello se necessario -->
+
+        </div>
+
+        <div class="cart-summary">
+            <h3>Totale Parziale: 109.98 €</h3>
+            <a href="checkout.html" class="checkout-btn">Procedi all'Acquisto</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tutti i diritti riservati.</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="https://github.com/pollok1ller/sito-scuola">Github</a>
+            <a href="#">Discord</a>
+        </div>
+    </footer>
+
+    <style>
+        /* Stili per il carrello */
+        .cart {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .cart-items {
+            margin-bottom: 30px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .item-details {
+            text-align: left;
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .item-details h3 {
+            margin: 0;
+        }
+
+        .remove-btn {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .remove-btn:hover {
+            background-color: #ff1a1a;
+        }
+
+        .cart-summary {
+            margin-top: 30px;
+        }
+
+        .cart-summary h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .checkout-btn {
+            text-decoration: none;
+            background-color: #000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .checkout-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</body>
+</html>
